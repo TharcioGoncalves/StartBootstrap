@@ -84,10 +84,65 @@ a{
 }
 /* SERVICE SECTION */
 #serviceSection{
-    padding: 60px;
+    padding: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 20px;
+    background-color: white;
+}
+.mainServiceText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.serviceText{
+    font-size: 28px;
+    color: #201e1e;
+}
+.serviceParagraph{
+    font-style: italic;
+    min-width: 300px;
+}
+#serviceSection h2{
+    color: #201e1e;
+}
+#serviceSection p{
+    font-size: 11.5px;
+    font-family: "Roboto Slab", serif;
+    color: rgb(90, 90, 90);
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+}
+.service{
+    text-align: center;
+    flex: 1 1 250px;
+}
+.service  h2{
+    margin: 10px auto;
+}
+.iconeService{
+    color: #fff;
+    background-color: gold;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 40px;
+}
+/* PORTFOLIO SECTION */
+#portfolioSection{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgb(234, 233, 233);
+    padding: 60px;
 }
