@@ -15,6 +15,7 @@
         <nav class="navegator">
             <a href="#hero" class="navbar-logo"><img src="img/assets/img/navbar-logo.svg" alt="navbar-logo"
                     class="navbar-logo"></a>
+            <button class="burgerMenu"><p>Menu</p><i class="fa-solid fa-bars"></i></button>
             <ul class="navbar-sections">
                 <li><a href="#serviceSection">SERVICES</a></li>
                 <li><a href="#portfolioSection">PORTFOLIO</a></li>
@@ -59,7 +60,7 @@
                 <i class="fa-solid fa-lock iconeService"></i>
                 <h2>Web Security</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Minima maxime quam architecto quo inventore
+                    Minima maxime quam archite cto quo inventore
                     harum ex magni, dicta impedit.
                 </p>
             </div>
@@ -75,34 +76,187 @@
         <!-- PORTFOLIO CARDS -->
         <div class="cards">
             <div class="card">
-                <div class="image-container"><img src="img/assets/img/team/portfolio/1.jpg" alt="Threads"></div>
+                <div class="image-container" onclick="activeButton(0)"><img src="img/assets/img/team/portfolio/1.jpg"
+                        alt="Threads"></div>
                 <h2>Threads</h2>
                 <p>Illustration</p>
             </div>
             <div class="card">
-                <div class="image-container"><img src="img/assets/img/team/portfolio/2.jpg" alt="Threads"></div>
+                <div class="image-container" onclick="activeButton(1)"><img src="img/assets/img/team/portfolio/2.jpg"
+                        alt="Threads"></div>
                 <h2>Explore</h2>
                 <p>Graphic Design</p>
             </div>
             <div class="card">
-                <div class="image-container"><img src="img/assets/img/team/portfolio/3.jpg" alt="Finish"></div>
+                <div class="image-container" onclick="activeButton(2)"><img src="img/assets/img/team/portfolio/3.jpg"
+                        alt="Finish"></div>
                 <h2>Finish</h2>
                 <p>Identity</p>
             </div>
             <div class="card">
-                <div class="image-container"><img src="img/assets/img/team/portfolio/4.jpg" alt="Lines"></div>
+                <div class="image-container" onclick="activeButton(3)"><img src="img/assets/img/team/portfolio/4.jpg"
+                        alt="Lines"></div>
                 <h2>Lines</h2>
                 <p>Branding</p>
             </div>
             <div class="card">
-                <div class="image-container"><img src="img/assets/img/team/portfolio/5.jpg" alt="Southwest"></div>
+                <div class="image-container" onclick="activeButton(4)"><img src="img/assets/img/team/portfolio/5.jpg"
+                        alt="Southwest"></div>
                 <h2>Southwest</h2>
                 <p>Website Design</p>
             </div>
             <div class="card">
-                <div class="image-container"><img src="img/assets/img/team/portfolio/6.jpg" alt="Window"></div>
+                <div class="image-container" onclick="activeButton(5)"><img src="img/assets/img/team/portfolio/6.jpg"
+                        alt="Window"></div>
                 <h2>Window</h2>
                 <p>Photography</p>
+            </div>
+        </div>
+        <!-- MODAL CARD1 -->
+        <div class="modal-container">
+            <div class="box">
+                <img src="img/assets/img/close-icon.svg" alt="encerrar" class="close">
+                <span class="mainTextModal">
+                    <h2 class="textModal">PROJECT NAME</h2>
+                    <p class="mainParagraph">Lorem ipsum dolor sit amet consectetur.</p>
+                </span>
+                <img src="img/assets/img/team/portfolio/1.jpg" alt="Threads" class="item">
+                <p id="paragraph">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat
+                    aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis
+                    facere nemo!
+                </p>
+                <span id="info">
+                    <p><b>Client:</b>Explore</p>
+                    <p><b>Category:</b>Graphic Design</p>
+                </span>
+                <button class="closeModal">CLOSE PROJECT</button>
+            </div>
+        </div>
+        <!-- MODAL CARD2 -->
+        <div class="modal-container">
+            <div class="box">
+                <img src="img/assets/img/close-icon.svg" alt="encerrar" class="close">
+                <span class="mainTextModal">
+                    <h2 class="textModal">PROJECT NAME</h2>
+                    <p class="mainParagraph">Lorem ipsum dolor sit amet consectetur.</p>
+                </span>
+                <img src="img/assets/img/team/portfolio/2.jpg" alt="Threads" class="item">
+                <p id="paragraph">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat
+                    aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis
+                    facere nemo!
+                </p>
+                <span id="info">
+                    <p><b>Client:</b>Explore</p>
+                    <p><b>Category:</b>Graphic Design</p>
+                </span>
+                <button class="closeModal">CLOSE PROJECT</button>
+            </div>
+        </div>
+        <!-- MODAL CARD3 -->
+        <div class="modal-container">
+            <div class="box">
+                <img src="img/assets/img/close-icon.svg" alt="encerrar" class="close">
+                <span class="mainTextModal">
+                    <h2 class="textModal">PROJECT NAME</h2>
+                    <p class="mainParagraph">Lorem ipsum dolor sit amet consectetur.</p>
+                </span>
+                <img src="img/assets/img/team/portfolio/3.jpg" alt="Threads" class="item">
+                <p id="paragraph">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat
+                    aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis
+                    facere nemo!
+                </p>
+                <span id="info">
+                    <p><b>Client:</b>Explore</p>
+                    <p><b>Category:</b>Graphic Design</p>
+                </span>
+                <button class="closeModal">CLOSE PROJECT</button>
+            </div>
+        </div>
+        <!-- MODAL CARD3 -->
+        <div class="modal-container">
+            <div class="box">
+                <img src="img/assets/img/close-icon.svg" alt="encerrar" class="close">
+                <span class="mainTextModal">
+                    <h2 class="textModal">PROJECT NAME</h2>
+                    <p class="mainParagraph">Lorem ipsum dolor sit amet consectetur.</p>
+                </span>
+                <img src="img/assets/img/team/portfolio/4.jpg" alt="Threads" class="item">
+                <p id="paragraph">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat
+                    aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis
+                    facere nemo!
+                </p>
+                <span id="info">
+                    <p><b>Client:</b>Explore</p>
+                    <p><b>Category:</b>Graphic Design</p>
+                </span>
+                <button class="closeModal">CLOSE PROJECT</button>
+            </div>
+        </div>
+        <!-- MODAL CARD4 -->
+        <div class="modal-container">
+            <div class="box">
+                <img src="img/assets/img/close-icon.svg" alt="encerrar" class="close">
+                <span class="mainTextModal">
+                    <h2 class="textModal">PROJECT NAME</h2>
+                    <p class="mainParagraph">Lorem ipsum dolor sit amet consectetur.</p>
+                </span>
+                <img src="img/assets/img/team/portfolio/5.jpg" alt="Threads" class="item">
+                <p id="paragraph">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat
+                    aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis
+                    facere nemo!
+                </p>
+                <span id="info">
+                    <p><b>Client:</b>Explore</p>
+                    <p><b>Category:</b>Graphic Design</p>
+                </span>
+                <button class="closeModal">CLOSE PROJECT</button>
+            </div>
+        </div>
+        <!-- MODAL CARD5 -->
+        <div class="modal-container">
+            <div class="box">
+                <img src="img/assets/img/close-icon.svg" alt="encerrar" class="close">
+                <span class="mainTextModal">
+                    <h2 class="textModal">PROJECT NAME</h2>
+                    <p class="mainParagraph">Lorem ipsum dolor sit amet consectetur.</p>
+                </span>
+                <img src="img/assets/img/team/portfolio/5.jpg" alt="Threads" class="item">
+                <p id="paragraph">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat
+                    aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis
+                    facere nemo!
+                </p>
+                <span id="info">
+                    <p><b>Client:</b>Explore</p>
+                    <p><b>Category:</b>Graphic Design</p>
+                </span>
+                <button class="closeModal">CLOSE PROJECT</button>
+            </div>
+        </div>
+        <!-- MODAL CARD6 -->
+        <div class="modal-container">
+            <div class="box">
+                <img src="img/assets/img/close-icon.svg" alt="encerrar" class="close">
+                <span class="mainTextModal">
+                    <h2 class="textModal">PROJECT NAME</h2>
+                    <p class="mainParagraph">Lorem ipsum dolor sit amet consectetur.</p>
+                </span>
+                <img src="img/assets/img/team/portfolio/6.jpg" alt="Threads" class="item">
+                <p id="paragraph">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat
+                    aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis
+                    facere nemo!
+                </p>
+                <span id="info">
+                    <p><b>Client:</b>Explore</p>
+                    <p><b>Category:</b>Graphic Design</p>
+                </span>
+                <button class="closeModal">CLOSE PROJECT</button>
             </div>
         </div>
     </section>
@@ -119,7 +273,7 @@
                 <img src="img/assets/img/about/1.jpg" alt="firstCircleEffect">
                 <div class="conector"></div>
                 <img src="img/assets/img/about/2.jpg" alt="secondCircleEffect">
-                <di class="conector"></di>
+                <div class="conector"></div>
                 <img src="img/assets/img/about/3.jpg" alt="thirdCircleEffect">
                 <div class="conector"></div>
                 <img src="img/assets/img/about/4.jpg" alt="fouthCircleEffect">
@@ -224,17 +378,39 @@
         <div class="inputs">
             <!-- PERSONAL DATA -->
             <div class="personalData">
-                <input type="text" placeholder="Your Name*">
-                <input type="email" placeholder="Your Email*">
-                <input type="text" placeholder="Your Phone*">
+                <div class="inputBox">
+                    <i class="fa-solid fa-circle-exclamation errorIcon errorIcons"></i>
+                    <input type="text" placeholder="Your Name*" class="input">
+                    <p class="errorMessage">A name is required</p>
+                </div>
+                <div class="inputBox">
+                    <i class="fa-solid fa-circle-exclamation errorIcon errorIcons"></i>
+                    <input type="email" placeholder="Your Email*" class="input">
+                    <p class="errorMessage">An email is required</p>
+                    <p class="errorEmail">Email is not valid</p>
+                </div>
+                <div class="inputBox">
+                    <i class="fa-solid fa-circle-exclamation errorIcon errorIcons"></i>
+                    <input type="text" placeholder="Your Phone*" class="input">
+                    <p class="errorMessage">A phone number is required</p>
+                </div>
             </div>
             <!-- MESSAGE INPUT-->
             <div class="messageInput">
-                <textarea type="text" placeholder="Your Message*"></textarea>
+                <i class="fa-solid fa-circle-exclamation messageErrorIcon errorIcons"></i>
+                <textarea type="text" placeholder="Your Message*" class="input"></textarea>
+                <p class="errorMessage">A message is required</p>
             </div>
         </div>
         <!-- BUTTON -->
-        <button disabled>SEND MESSAGE</button>
+        <button disabled id="submitButton">SEND MESSAGE</button>
+        <!-- ANSWER AFTER SUBMIT -->
+        <div class="answerSubmit">
+            <p><b>Form submission successful!</b></p>
+            <p>To activate this form, sign up at</p>
+            <a
+                href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+        </div>
     </section>
     <footer>
         <p>Copyright © Your Website 2023</p>
